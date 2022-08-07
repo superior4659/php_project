@@ -1,0 +1,110 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+@media (min-width: 790px) {
+  .signup {
+    width: 50%;
+  }
+}
+@media (max-width: 790px) {
+  .allcards {
+    display: flex;
+    flex-direction: column;
+  }
+  .each {
+    margin-bottom: 30px;
+  }
+}
+
+.introc {
+  background-color: #1c1625;
+}
+.cardho:hover {
+  cursor: pointer;
+  background-color: #dd9d9d;
+  color: black;
+}
+.butt:hover {
+  color: black;
+  background-color: #a2b9f7;
+}
+.mbutt {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+.mbutt:hover {
+  color: white;
+  background-color: darkcyan;
+}
+.ic {
+  color: darkgoldenrod;
+}
+.limage {
+  margin-left: 120px;
+}
+
+.chanimco {
+  background-color: #1c1625;
+  box-shadow: 3px 4px 4px #c77171;
+}
+.im {
+  margin-top: 10px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.ligimage {
+  box-shadow: 3px 4px 5px #421818;
+}
+.dimage {
+  box-shadow: 3px 4px 4px #4d3c3c;
+}
+.signbtn {
+  margin-left: 100px;
+}
+
+.vew {
+  color: yellow;
+}
+.navbar-style {
+  box-shadow: 0 5px 6px #411414;
+}
+.csize {
+  height: 390px;
+
+  box-shadow: 2px 3px 4px #6b6565;
+}
+.csize:hover {
+  cursor: pointer;
+}
+
+.ytlink {
+  color: white;
+}
+
+.ytlink:hover {
+  color: #411414;
+}
+
+.btn {
+  margin: auto;
+}
+
+.opbtn {
+  color: white;
+}
+
+.belogin{
+  height: 75vh;
+}
+
+.belogintext{
+  text-align:center;
+  padding-top:15%;
+}
+
+.foottt{
+  margin-top:45px;
+}

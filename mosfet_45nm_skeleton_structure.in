@@ -1,0 +1,52 @@
+go atlas
+mesh space.mult=1
+# The default are in micro meter range. You have to use 0.0xx for nano meter range everywhere.
+x.m l=0.000    s=0.005
+x.m l=		s=
+x.m l=		s=
+x.m l=		s=
+x.m l=		s=
+x.m l=0.135    s=0.005
+
+y.m l= 0.000   s=0.010
+y.m l=		s=
+y.m l=		s=
+y.m l=		s=
+y.m l=		s=
+y.m l= 0.105   s=0.001
+
+
+# Gate Oxide Upper
+
+# Channel Silicon
+
+# Drain Silicon 
+
+# Source Silicon
+
+# Bulk Oxide
+
+# Silicon Substrate
+region num=1 silicon x.min=0.000 x.max=0.135 y.min=0.000  y.max=0.030  
+
+
+#Source Metal Left Side
+electrode num=2 name= source  x.min=  x.max=  y.min=  y.max=
+# Drain Metal Right Side
+electrode num=3 name= drain   x.min=  x.max=  y.min=  y.max=
+# Gate Metal
+electrode num=1 name= gate    x.min=  x.max=   y.min=   y.max=
+ 
+
+#Substrate Doping Region 
+doping uniform conc=1e+16 p.type x.min=   x.max=  y.min=  y.max=
+#Source Doping Region 
+
+#Drain Doping Region 
+
+# Channel Silicon Region
+
+
+save outf=SOI_Mosfet_45nm.str
+tonyplot SOI_Mosfet_45nm.str
+quit
